@@ -50,7 +50,7 @@ public class AttractorManager : MonoBehaviour
 
     private void ActivateAttractor()
     {
-        //Destroy(prevAttractor);
+        Destroy(prevAttractor);
         prevAttractor = newAttractor;
         prevAttractor.GetComponent<PointEffector2D>().enabled = true;
     }
